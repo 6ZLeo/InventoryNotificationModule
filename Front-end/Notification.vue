@@ -74,6 +74,40 @@
   </script>
   
   <style scoped>
+  .notification-container {
+    margin-top: 20px;
+  }
+  .notification-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .notification-table th,
+  .notification-table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+  }
+  .notification-table th {
+    background-color: #f2f2f2;
+  }
+  .notification-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
   
+  /* 将按钮样式应用于通知操作按钮 */
+  .notification-table .btn {
+    border: none; /* 去除按钮边框 */
+    padding: 5px 10px; /* 调整按钮内边距 */
+    transition: all 0.3s ease; /* 添加过渡效果 */
+  }
+  
+  .notification-table .btn.text-primary {
+    background-color: rgba(255, 255, 255, 0.534); /* 设置背景颜色 */
+    color: #007bff; /* 设置文字颜色 */
+  }
+  
+  .notification-table .btn.text-primary:hover {
+    background-color: transparent; /* 鼠标悬停时去除背景颜色 */
+    color: #0056b3; /* 设置悬停时文字颜色 */
+  }
   </style>
   
